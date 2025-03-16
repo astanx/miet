@@ -1,5 +1,4 @@
 import requests
-from PIL import Image
 import numpy as np
 
 def fetch_tiles(api_url):

@@ -38,9 +38,6 @@ def index(request):
 
 def map_view(request):
     tiles = list(Tile.objects.all().values_list('data', flat=True))[:16]
-    print(123)
-    print(tiles)
-    print(23323232)
     if len(tiles) != 16:
         return render(request, 'error.html')
     

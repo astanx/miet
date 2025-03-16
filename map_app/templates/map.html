@@ -22,6 +22,17 @@
             <h2>Topography Map</h2>
             <img src="data:image/png;base64,{{ map_image }}" alt="Mars Map">
         </div>
+        
+        <div class="info-section">
+            <h2>Mission Data</h2>
+            <h3>Research Modules:</h3>
+            <p>Sender: ({{ mission_data.sender_x }}, {{ mission_data.sender_y }})</p>
+            <p>Listener: ({{ mission_data.listener_x }}, {{ mission_data.listener_y }})</p>
+            
+            <h3>Base Station Prices:</h3>
+            <p>Купер: {{ mission_data.cuper_price }} BTC</p>
+            <p>Энгель: {{ mission_data.engel_price }} BTC</p>
+        </div>
     </div>
 </body>
 </html>
