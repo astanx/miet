@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mars Map</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .map-section {
+            margin: 20px;
+        }
+        img {
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mars Surface Map</h1>
+    <div class="container">
+        <div class="map-section">
+            <h2>Topography Map</h2>
+            <img src="data:image/png;base64,{{ map_image }}" alt="Mars Map">
+        </div>
+    </div>
+</body>
+</html>
